@@ -1,0 +1,739 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A261FBB61A816B8000A965F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A261FBB51A816B8000A965F0 /* AppDelegate.swift */; };
+		A261FBB81A816B8000A965F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A261FBB71A816B8000A965F0 /* ViewController.swift */; };
+		A261FBBB1A816B8000A965F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A261FBB91A816B8000A965F0 /* Main.storyboard */; };
+		A261FBBD1A816B8000A965F0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A261FBBC1A816B8000A965F0 /* Images.xcassets */; };
+		A261FBC01A816B8000A965F0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A261FBBE1A816B8000A965F0 /* LaunchScreen.xib */; };
+		A261FBCC1A816B8000A965F0 /* TweetsOnYourWristTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A261FBCB1A816B8000A965F0 /* TweetsOnYourWristTests.swift */; };
+		A261FBD61A816BC500A965F0 /* TwitterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A261FBD51A816BC500A965F0 /* TwitterService.swift */; };
+		A261FBD81A816C2000A965F0 /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A261FBD71A816C2000A965F0 /* Tweet.swift */; };
+		A261FBDA1A816DFD00A965F0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A261FBD91A816DFD00A965F0 /* HomeViewController.swift */; };
+		A261FBDC1A816F2800A965F0 /* TweetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A261FBDB1A816F2800A965F0 /* TweetCell.swift */; };
+		A261FC101A81724000A965F0 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A261FC0F1A81724000A965F0 /* InterfaceController.swift */; };
+		A261FC121A81724000A965F0 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A261FC111A81724000A965F0 /* NotificationController.swift */; };
+		A261FC141A81724000A965F0 /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A261FC131A81724000A965F0 /* GlanceController.swift */; };
+		A261FC161A81724000A965F0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A261FC151A81724000A965F0 /* Images.xcassets */; };
+		A261FC1A1A81724000A965F0 /* TweetsOnYourWrist WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = A261FC191A81724000A965F0 /* TweetsOnYourWrist WatchKit App.app */; };
+		A261FC221A81724000A965F0 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A261FC201A81724000A965F0 /* Interface.storyboard */; };
+		A261FC241A81724000A965F0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A261FC231A81724000A965F0 /* Images.xcassets */; };
+		A261FC271A81724000A965F0 /* TweetsOnYourWrist WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A261FC0A1A81724000A965F0 /* TweetsOnYourWrist WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A261FC301A8175BD00A965F0 /* TweetTableRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A261FC2E1A8175A900A965F0 /* TweetTableRowController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A261FBC61A816B8000A965F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A261FBA81A816B8000A965F0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A261FBAF1A816B8000A965F0;
+			remoteInfo = TweetsOnYourWrist;
+		};
+		A261FC1B1A81724000A965F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A261FBA81A816B8000A965F0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A261FC181A81724000A965F0;
+			remoteInfo = "TweetsOnYourWrist WatchKit App";
+		};
+		A261FC251A81724000A965F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A261FBA81A816B8000A965F0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A261FC091A81724000A965F0;
+			remoteInfo = "TweetsOnYourWrist WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A261FC051A81718D00A965F0 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A261FC271A81724000A965F0 /* TweetsOnYourWrist WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A261FBB01A816B8000A965F0 /* TweetsOnYourWrist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TweetsOnYourWrist.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A261FBB41A816B8000A965F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A261FBB51A816B8000A965F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A261FBB71A816B8000A965F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A261FBBA1A816B8000A965F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A261FBBC1A816B8000A965F0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A261FBBF1A816B8000A965F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		A261FBC51A816B8000A965F0 /* TweetsOnYourWristTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TweetsOnYourWristTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A261FBCA1A816B8000A965F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A261FBCB1A816B8000A965F0 /* TweetsOnYourWristTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetsOnYourWristTests.swift; sourceTree = "<group>"; };
+		A261FBD51A816BC500A965F0 /* TwitterService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TwitterService.swift; path = ../TwitterService.swift; sourceTree = "<group>"; };
+		A261FBD71A816C2000A965F0 /* Tweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
+		A261FBD91A816DFD00A965F0 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A261FBDB1A816F2800A965F0 /* TweetCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetCell.swift; sourceTree = "<group>"; };
+		A261FC0A1A81724000A965F0 /* TweetsOnYourWrist WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TweetsOnYourWrist WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A261FC0D1A81724000A965F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A261FC0E1A81724000A965F0 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		A261FC0F1A81724000A965F0 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		A261FC111A81724000A965F0 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		A261FC131A81724000A965F0 /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		A261FC151A81724000A965F0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A261FC191A81724000A965F0 /* TweetsOnYourWrist WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TweetsOnYourWrist WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A261FC1F1A81724000A965F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A261FC211A81724000A965F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		A261FC231A81724000A965F0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A261FC2E1A8175A900A965F0 /* TweetTableRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetTableRowController.swift; sourceTree = "<group>"; };
+		A27B803C1A819AC700BB85B5 /* TweetsOnYourWrist.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TweetsOnYourWrist.entitlements; sourceTree = "<group>"; };
+		A27B803D1A819B5200BB85B5 /* TweetsOnYourWrist WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "TweetsOnYourWrist WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A261FBAD1A816B8000A965F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A261FBC21A816B8000A965F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A261FC071A81724000A965F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A261FBA71A816B8000A965F0 = {
+			isa = PBXGroup;
+			children = (
+				A261FBB21A816B8000A965F0 /* TweetsOnYourWrist */,
+				A261FBC81A816B8000A965F0 /* TweetsOnYourWristTests */,
+				A261FC0B1A81724000A965F0 /* TweetsOnYourWrist WatchKit Extension */,
+				A261FC1D1A81724000A965F0 /* TweetsOnYourWrist WatchKit App */,
+				A261FBB11A816B8000A965F0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A261FBB11A816B8000A965F0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A261FBB01A816B8000A965F0 /* TweetsOnYourWrist.app */,
+				A261FBC51A816B8000A965F0 /* TweetsOnYourWristTests.xctest */,
+				A261FC0A1A81724000A965F0 /* TweetsOnYourWrist WatchKit Extension.appex */,
+				A261FC191A81724000A965F0 /* TweetsOnYourWrist WatchKit App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A261FBB21A816B8000A965F0 /* TweetsOnYourWrist */ = {
+			isa = PBXGroup;
+			children = (
+				A27B803C1A819AC700BB85B5 /* TweetsOnYourWrist.entitlements */,
+				A261FBD51A816BC500A965F0 /* TwitterService.swift */,
+				A261FBD91A816DFD00A965F0 /* HomeViewController.swift */,
+				A261FBD71A816C2000A965F0 /* Tweet.swift */,
+				A261FBB51A816B8000A965F0 /* AppDelegate.swift */,
+				A261FBB71A816B8000A965F0 /* ViewController.swift */,
+				A261FBB91A816B8000A965F0 /* Main.storyboard */,
+				A261FBDB1A816F2800A965F0 /* TweetCell.swift */,
+				A261FBBC1A816B8000A965F0 /* Images.xcassets */,
+				A261FBBE1A816B8000A965F0 /* LaunchScreen.xib */,
+				A261FBB31A816B8000A965F0 /* Supporting Files */,
+			);
+			path = TweetsOnYourWrist;
+			sourceTree = "<group>";
+		};
+		A261FBB31A816B8000A965F0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A261FBB41A816B8000A965F0 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A261FBC81A816B8000A965F0 /* TweetsOnYourWristTests */ = {
+			isa = PBXGroup;
+			children = (
+				A261FBCB1A816B8000A965F0 /* TweetsOnYourWristTests.swift */,
+				A261FBC91A816B8000A965F0 /* Supporting Files */,
+			);
+			path = TweetsOnYourWristTests;
+			sourceTree = "<group>";
+		};
+		A261FBC91A816B8000A965F0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A261FBCA1A816B8000A965F0 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A261FC0B1A81724000A965F0 /* TweetsOnYourWrist WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A27B803D1A819B5200BB85B5 /* TweetsOnYourWrist WatchKit Extension.entitlements */,
+				A261FC0F1A81724000A965F0 /* InterfaceController.swift */,
+				A261FC111A81724000A965F0 /* NotificationController.swift */,
+				A261FC131A81724000A965F0 /* GlanceController.swift */,
+				A261FC151A81724000A965F0 /* Images.xcassets */,
+				A261FC0C1A81724000A965F0 /* Supporting Files */,
+			);
+			path = "TweetsOnYourWrist WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		A261FC0C1A81724000A965F0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A261FC0D1A81724000A965F0 /* Info.plist */,
+				A261FC0E1A81724000A965F0 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A261FC1D1A81724000A965F0 /* TweetsOnYourWrist WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				A261FC201A81724000A965F0 /* Interface.storyboard */,
+				A261FC2E1A8175A900A965F0 /* TweetTableRowController.swift */,
+				A261FC231A81724000A965F0 /* Images.xcassets */,
+				A261FC1E1A81724000A965F0 /* Supporting Files */,
+			);
+			path = "TweetsOnYourWrist WatchKit App";
+			sourceTree = "<group>";
+		};
+		A261FC1E1A81724000A965F0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A261FC1F1A81724000A965F0 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A261FBAF1A816B8000A965F0 /* TweetsOnYourWrist */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A261FBCF1A816B8000A965F0 /* Build configuration list for PBXNativeTarget "TweetsOnYourWrist" */;
+			buildPhases = (
+				A261FBAC1A816B8000A965F0 /* Sources */,
+				A261FBAD1A816B8000A965F0 /* Frameworks */,
+				A261FBAE1A816B8000A965F0 /* Resources */,
+				A261FC051A81718D00A965F0 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A261FC261A81724000A965F0 /* PBXTargetDependency */,
+			);
+			name = TweetsOnYourWrist;
+			productName = TweetsOnYourWrist;
+			productReference = A261FBB01A816B8000A965F0 /* TweetsOnYourWrist.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A261FBC41A816B8000A965F0 /* TweetsOnYourWristTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A261FBD21A816B8000A965F0 /* Build configuration list for PBXNativeTarget "TweetsOnYourWristTests" */;
+			buildPhases = (
+				A261FBC11A816B8000A965F0 /* Sources */,
+				A261FBC21A816B8000A965F0 /* Frameworks */,
+				A261FBC31A816B8000A965F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A261FBC71A816B8000A965F0 /* PBXTargetDependency */,
+			);
+			name = TweetsOnYourWristTests;
+			productName = TweetsOnYourWristTests;
+			productReference = A261FBC51A816B8000A965F0 /* TweetsOnYourWristTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A261FC091A81724000A965F0 /* TweetsOnYourWrist WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A261FC2B1A81724000A965F0 /* Build configuration list for PBXNativeTarget "TweetsOnYourWrist WatchKit Extension" */;
+			buildPhases = (
+				A261FC061A81724000A965F0 /* Sources */,
+				A261FC071A81724000A965F0 /* Frameworks */,
+				A261FC081A81724000A965F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A261FC1C1A81724000A965F0 /* PBXTargetDependency */,
+			);
+			name = "TweetsOnYourWrist WatchKit Extension";
+			productName = "TweetsOnYourWrist WatchKit Extension";
+			productReference = A261FC0A1A81724000A965F0 /* TweetsOnYourWrist WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		A261FC181A81724000A965F0 /* TweetsOnYourWrist WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A261FC281A81724000A965F0 /* Build configuration list for PBXNativeTarget "TweetsOnYourWrist WatchKit App" */;
+			buildPhases = (
+				A261FC171A81724000A965F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TweetsOnYourWrist WatchKit App";
+			productName = "TweetsOnYourWrist WatchKit App";
+			productReference = A261FC191A81724000A965F0 /* TweetsOnYourWrist WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A261FBA81A816B8000A965F0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = BPJ;
+				TargetAttributes = {
+					A261FBAF1A816B8000A965F0 = {
+						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 246U3NZ7Z2;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					A261FBC41A816B8000A965F0 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = A261FBAF1A816B8000A965F0;
+					};
+					A261FC091A81724000A965F0 = {
+						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 246U3NZ7Z2;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					A261FC181A81724000A965F0 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+				};
+			};
+			buildConfigurationList = A261FBAB1A816B8000A965F0 /* Build configuration list for PBXProject "TweetsOnYourWrist" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A261FBA71A816B8000A965F0;
+			productRefGroup = A261FBB11A816B8000A965F0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A261FBAF1A816B8000A965F0 /* TweetsOnYourWrist */,
+				A261FBC41A816B8000A965F0 /* TweetsOnYourWristTests */,
+				A261FC091A81724000A965F0 /* TweetsOnYourWrist WatchKit Extension */,
+				A261FC181A81724000A965F0 /* TweetsOnYourWrist WatchKit App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A261FBAE1A816B8000A965F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A261FBBB1A816B8000A965F0 /* Main.storyboard in Resources */,
+				A261FBC01A816B8000A965F0 /* LaunchScreen.xib in Resources */,
+				A261FBBD1A816B8000A965F0 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A261FBC31A816B8000A965F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A261FC081A81724000A965F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A261FC1A1A81724000A965F0 /* TweetsOnYourWrist WatchKit App.app in Resources */,
+				A261FC161A81724000A965F0 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A261FC171A81724000A965F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A261FC221A81724000A965F0 /* Interface.storyboard in Resources */,
+				A261FC241A81724000A965F0 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A261FBAC1A816B8000A965F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A261FBDA1A816DFD00A965F0 /* HomeViewController.swift in Sources */,
+				A261FBB81A816B8000A965F0 /* ViewController.swift in Sources */,
+				A261FBB61A816B8000A965F0 /* AppDelegate.swift in Sources */,
+				A261FBDC1A816F2800A965F0 /* TweetCell.swift in Sources */,
+				A261FBD61A816BC500A965F0 /* TwitterService.swift in Sources */,
+				A261FBD81A816C2000A965F0 /* Tweet.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A261FBC11A816B8000A965F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A261FBCC1A816B8000A965F0 /* TweetsOnYourWristTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A261FC061A81724000A965F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A261FC121A81724000A965F0 /* NotificationController.swift in Sources */,
+				A261FC301A8175BD00A965F0 /* TweetTableRowController.swift in Sources */,
+				A261FC101A81724000A965F0 /* InterfaceController.swift in Sources */,
+				A261FC141A81724000A965F0 /* GlanceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A261FBC71A816B8000A965F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A261FBAF1A816B8000A965F0 /* TweetsOnYourWrist */;
+			targetProxy = A261FBC61A816B8000A965F0 /* PBXContainerItemProxy */;
+		};
+		A261FC1C1A81724000A965F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A261FC181A81724000A965F0 /* TweetsOnYourWrist WatchKit App */;
+			targetProxy = A261FC1B1A81724000A965F0 /* PBXContainerItemProxy */;
+		};
+		A261FC261A81724000A965F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A261FC091A81724000A965F0 /* TweetsOnYourWrist WatchKit Extension */;
+			targetProxy = A261FC251A81724000A965F0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A261FBB91A816B8000A965F0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A261FBBA1A816B8000A965F0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A261FBBE1A816B8000A965F0 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A261FBBF1A816B8000A965F0 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		A261FC201A81724000A965F0 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A261FC211A81724000A965F0 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A261FBCD1A816B8000A965F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A261FBCE1A816B8000A965F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A261FBD01A816B8000A965F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TweetsOnYourWrist/TweetsOnYourWrist.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = TweetsOnYourWrist/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		A261FBD11A816B8000A965F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TweetsOnYourWrist/TweetsOnYourWrist.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = TweetsOnYourWrist/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		A261FBD31A816B8000A965F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TweetsOnYourWristTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TweetsOnYourWrist.app/TweetsOnYourWrist";
+			};
+			name = Debug;
+		};
+		A261FBD41A816B8000A965F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TweetsOnYourWristTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TweetsOnYourWrist.app/TweetsOnYourWrist";
+			};
+			name = Release;
+		};
+		A261FC291A81724000A965F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = TweetsOnYourWrist_WatchKit_Extension;
+				INFOPLIST_FILE = "TweetsOnYourWrist WatchKit App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		A261FC2A1A81724000A965F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = TweetsOnYourWrist_WatchKit_Extension;
+				INFOPLIST_FILE = "TweetsOnYourWrist WatchKit App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		A261FC2C1A81724000A965F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "TweetsOnYourWrist WatchKit Extension/TweetsOnYourWrist WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TweetsOnYourWrist WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A261FC2D1A81724000A965F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "TweetsOnYourWrist WatchKit Extension/TweetsOnYourWrist WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "TweetsOnYourWrist WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A261FBAB1A816B8000A965F0 /* Build configuration list for PBXProject "TweetsOnYourWrist" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A261FBCD1A816B8000A965F0 /* Debug */,
+				A261FBCE1A816B8000A965F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A261FBCF1A816B8000A965F0 /* Build configuration list for PBXNativeTarget "TweetsOnYourWrist" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A261FBD01A816B8000A965F0 /* Debug */,
+				A261FBD11A816B8000A965F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A261FBD21A816B8000A965F0 /* Build configuration list for PBXNativeTarget "TweetsOnYourWristTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A261FBD31A816B8000A965F0 /* Debug */,
+				A261FBD41A816B8000A965F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A261FC281A81724000A965F0 /* Build configuration list for PBXNativeTarget "TweetsOnYourWrist WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A261FC291A81724000A965F0 /* Debug */,
+				A261FC2A1A81724000A965F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A261FC2B1A81724000A965F0 /* Build configuration list for PBXNativeTarget "TweetsOnYourWrist WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A261FC2C1A81724000A965F0 /* Debug */,
+				A261FC2D1A81724000A965F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A261FBA81A816B8000A965F0 /* Project object */;
+}

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6750" systemVersion="14C106a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6735"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="TweetsOnYourWrist" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="P43-cf-caQ">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TWEET_CELL" rowHeight="100" id="wMj-X5-ypm" customClass="TweetCell" customModule="TweetsOnYourWrist" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wMj-X5-ypm" id="CpA-Nt-NUf">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UCB-ql-F3x">
+                                                    <rect key="frame" x="8" y="3" width="80" height="80"/>
+                                                    <color key="backgroundColor" red="0.26747486149999999" green="1" blue="0.32945114939999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="80" id="gfx-cS-3mt"/>
+                                                        <constraint firstAttribute="width" constant="80" id="sdM-CQ-21S"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="osn-B7-69F">
+                                                    <rect key="frame" x="103" y="16" width="489" height="71"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="osn-B7-69F" secondAttribute="bottom" constant="5" id="4Um-gg-L4n"/>
+                                                <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="UCB-ql-F3x" secondAttribute="bottom" constant="8" id="8jv-Ha-FPm"/>
+                                                <constraint firstItem="osn-B7-69F" firstAttribute="trailing" secondItem="CpA-Nt-NUf" secondAttribute="trailingMargin" id="Wqw-Kb-1Di"/>
+                                                <constraint firstAttribute="centerY" secondItem="UCB-ql-F3x" secondAttribute="centerY" priority="750" id="Xbv-Hx-WBN"/>
+                                                <constraint firstItem="osn-B7-69F" firstAttribute="top" secondItem="CpA-Nt-NUf" secondAttribute="topMargin" constant="8" id="Z78-Cp-jC6"/>
+                                                <constraint firstItem="osn-B7-69F" firstAttribute="leading" secondItem="UCB-ql-F3x" secondAttribute="trailing" constant="15" id="hDf-RC-i3i"/>
+                                                <constraint firstItem="UCB-ql-F3x" firstAttribute="leading" secondItem="CpA-Nt-NUf" secondAttribute="leadingMargin" id="t30-Xq-eq8"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="avatarImageView" destination="UCB-ql-F3x" id="f6A-g7-tAg"/>
+                                            <outlet property="tweetLabel" destination="osn-B7-69F" id="cbT-fL-t07"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="P43-cf-caQ" secondAttribute="bottom" id="B5p-Hh-zUr"/>
+                            <constraint firstItem="P43-cf-caQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="K3x-Cs-954"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="P43-cf-caQ" secondAttribute="trailing" constant="-16" id="Ld5-JK-B2s"/>
+                            <constraint firstItem="P43-cf-caQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="abq-35-zMT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="P43-cf-caQ" id="KbN-IO-hTG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="759" y="219"/>
+        </scene>
+    </scenes>
+</document>
